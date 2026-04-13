@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+    <div id="topleftbuttons" class="organizedside"><!--this is the top bar for the main descriptions of the players stats, the buttons will disapear when their is none of that, loiie when you haven't drank the potion the magic will be gone-->
+      <button id="health" onclick="Health.showAdvanced()"></button>
+      <button id="power" onclick="Power.showAdvanced()"></button>
+      <button id="magic" onclick="Magic.showAdvanced()"></button>
+    </div>
+    <div id="toprightbuttons" class="organizedside"><!--this is the top bar for the right for more informations and congfigurations to the game-->
+      <button id="settings" onclick="Settings.showAdvanced()"></button>
+      <button id="Inventory" onclick="Inventory.showAdvanced()"></button>
+      <button id="Map" onclick="Map.showAdvanced()"></button>
+    </div>
+    <div id="maintext">
+      <!--this is forthe large center scroolable text that can is interactive and explains the story-->
+      <p id="dynamictext">Welcome to Time Choice</p>
+    </div>
+    <div id="bottombuttons" class="organizedside>
+      <div id="compass"><!--a compass image with theses directions on, they will be higligyted in blue when the direction is legal-->
+        <button id="north" onclick="world.go('north')"></button>
+        <button id="east" onclick="world.go('east')"></button>
+        <button id="south" onclick="world.go('south')"></button>
+        <button id="west" onclick="world.go('west')"></button>
+      </div>
+      <div id="actions">
+        <!--use javascript to append the actions-->
+      </div>
+      <div id="task">
+        <!--use javascript tochange the text of the main task-->
+        <p>No new tasks!</p>
+      </div>
+    </div>
+    <script src="assets/gameengine.js"></script>
+    <!--Classes in the html
+    Power,Magic,Health are under the simple button class
+    Map, settings, Inventory is under the instance iframe class (iframe popup of the map webpage html)
+    world is under the game world class
+    Ideas for game engine
+    each location has two (or more based of the change) states and dependencies, 
+    the regular state (nothing importnt changed) the buildings/items+people are still their
+    and the changed state, which is like thr regular state, but hold the information
+    for the locationafter the depedencies changed
+    -->
+  </body>
+</html>
