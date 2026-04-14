@@ -8,14 +8,14 @@
         "red door":"medevil-park",
         "blue door":"future-lab",
         "green door":"65mya",
-      }
+      }],
       "gotowd":[{
         "none"
       }],
         "look":[{
           "rock":[{
-            0:"the room is filled with doors, everwhere...\rto everwhere...\rtime bends to your knees",
-            1:"the room doors look like they are more welcoming...\rthe rock must have helped"
+            "0":"the room is filled with doors, everwhere...\rto everwhere...\rtime bends to your knees",
+            "1":"the room doors look like they are more welcoming...\rthe rock must have helped"
           }]
         }]
     }
