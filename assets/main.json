@@ -1,4 +1,4 @@
-{//burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value
+{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however",
   "room":[
     {
       "dependencies":["none"],
@@ -30,11 +30,12 @@
       },
       "gotowd":[{
         "book":[{"claim","burnt":"medievel-park"}],
-        "burn":"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything"
+        "burn":"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...",
       }],
         "look":[{
           "burnt":[{
-            true:"the park 
+            true:"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
+            false:"a beutiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
           }]
         }]
     }
