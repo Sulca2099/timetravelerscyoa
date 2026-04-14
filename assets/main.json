@@ -34,8 +34,8 @@
       }],
         "look":[{
           "burnt":[{
-            true:"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
-            false:"a beutiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
+            "true":"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
+            "false":"a beutiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
           }]
         }]
     }
