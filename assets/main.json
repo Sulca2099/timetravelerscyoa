@@ -1,4 +1,4 @@
-{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however",
+{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however. claim, is a list that has objects that are claimed, not to be confused with inventory if claimed is in the list, the engine will skip the notice",
   "room":[
     {
       "dependencies":["none"],
