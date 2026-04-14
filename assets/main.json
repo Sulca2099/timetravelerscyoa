@@ -1,1 +1,44 @@
+{//burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value
+  "room":[
+    {
+      "dependencies":["none"],
+      "title":"Everywhere in Time and space",
+      "description":"you look around, left and right all doors... Locked\rYou see a pedistal with holes for two stones three doors are unlocked, a door catches your intrest, it says 'home'\ris this your way home?",
+      "goto":[{
+        "red door":"medevil-park",
+        "blue door":"future-lab",
+        "green door":"65mya",
+      }
+      "gotowd":[{
+        "none"
+      }],
+        "look":[{
+          "rock":[{
+            0:"the room is filled with doors, everwhere...\rto everwhere...\rtime bends to your knees",
+            1:"the room doors look like they are more welcoming...\rthe rock must have helped"
+          }]
+        }]
+    }
+  ],
+    "medievel-park":[
+    {
+      "dependencies":["none"],
+      "title":"Ancient lands belonging to the kings and witches",
+      "description":"you wake up where is this place?\ryou watch reads '3/24/1426 6am pts' 'wow!'\rthe time machine took youto the mediveal ages, this ought to be intresting...",
+      "goto":[{
+        "north"
+      },
+      "gotowd":[{
+        "book":[{"claim","burnt":"medievel-park"}],
+        "burn":"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything"
+      }],
+        "look":[{
+          "burnt":[{
+            true:"the park 
+          }]
+        }]
+    }
+  ]
 
+
+}
