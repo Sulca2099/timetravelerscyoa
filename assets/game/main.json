@@ -59,8 +59,8 @@
       }],
         "look":[{
           "burnt":[{
-            "true":"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
-            "false":"a beautiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
+            "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other have'nt...",
+            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wodden areas.",
           }]
         }]
     }
