@@ -1,4 +1,4 @@
-//store the classes in the cache 
+//in the cache 
 class soilder{
   constructor(health,power){
     let health=health;
