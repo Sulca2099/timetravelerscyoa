@@ -132,12 +132,12 @@
       }],
       "gotowd":[{
         "book":[{"claim","burnt":"medievel-park"}],
-        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","SGDSGDSGDSGD"}],
+        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGDSGDSGDSGD"}],
       }],
         "look":[{
           "burnt":[{
-            "true":"",
-            "false":"People and dinosuars fill this place, chatter gosip and dino poop are everwhere, The village is made out of stone, but their are many wooden areas.",
+            "true":"it appears a pyromaniac has started a fire that is killing everyone. What monster woulddo such a thing?",
+            "false":"people are protesting against somerando king",
           }]
         }]
     }
