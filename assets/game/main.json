@@ -1,4 +1,4 @@
-{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however. claim, is a list that has objects that are claimed, not to be confused with inventory if claimed is in the list, the engine will skip the notice",
+{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however. claim, is a list that has objects that are claimed, not to be confused with inventory if claimed is in the list, the engine will skip the notice 1 SG in interactive burn means you summon one guard",
   "room":[
     {
       "dependencies":["none"],
@@ -24,18 +24,43 @@
     {
       "dependencies":["none"],
       "title":"Ancient lands belonging to the kings and witches",
-      "description":"you wake up where is this place?\ryou watch reads '3/24/1426 6am pts' 'wow!'\rthe time machine took youto the mediveal ages, this ought to be intresting...",
+      "description":"This is a park filled with peace, lack of sound and the sun looms down at you like a smile",
       "goto":[{
-        "north":""
+        "north":"times-square",
+        "south":"witches-hut",
       }],
       "gotowd":[{
         "book":[{"claim","burnt":"medievel-park"}],
-        "burn":"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...",
+        "burn":[{"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...","none"}],
       }],
         "look":[{
           "burnt":[{
             "true":"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
-            "false":"a beutiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
+            "false":"a beautiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
+          }]
+        }]
+    }
+  ],
+  
+    "times-square":[
+    {
+      "dependencies":["none"],
+      "title":"Ancient lands belonging to the kings and witches",
+      "description":"You head over to the villages center, it smells quite bad",
+      "goto":[{
+        "north":"castle",
+        "south":"medivevel-park",
+        "east":"guard-station",
+        "west":"graveyard"
+      }],
+      "gotowd":[{
+        "book":[{"claim","burnt":"medievel-park"}],
+        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGSGSGSG"}],
+      }],
+        "look":[{
+          "burnt":[{
+            "true":"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
+            "false":"a beautiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
           }]
         }]
     }
