@@ -1,4 +1,4 @@
-//in the cache 
+//in the cache JSON.stringify()
 class soilder{
   constructor(health,power){
     let health=health;
