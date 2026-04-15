@@ -11,8 +11,8 @@
     </div>
     <div id="toprightbuttons" class="organizedside"><!--this is the top bar for the right for more informations and congfigurations to the game-->
       <button id="settings" onclick="Settings.showAdvanced()"><img src="assets/icons/settings.png alt="settings"></button>
-      <button id="inventory" onclick="inventory.showAdvanced()"><img src="assets/icons/.png alt="health"></button>
-      <button id="Map" onclick="Map.showAdvanced()"></button>
+      <button id="inventory" onclick="inventory.showAdvanced()"><img src="assets/icons/inventory.png alt="inventory"></button>
+      <button id="Map" onclick="Map.showAdvanced()"><img src="assets/icons/map.png alt="map"></button>
     </div>
     <div id="maintext">
       <!--this is forthe large center scroolable text that can is interactive and explains the story-->
@@ -20,15 +20,18 @@
     </div>
     <div id="bottombuttons" class="organizedside>
       <div id="compass"><!--a compass image with theses directions on, they will be higligyted in blue when the direction is legal-->
+        <img src="assets/icons/compass.png alt="compass_img">
         <button id="north" onclick="world.go('north')"></button>
         <button id="east" onclick="world.go('east')"></button>
         <button id="south" onclick="world.go('south')"></button>
         <button id="west" onclick="world.go('west')"></button>
       </div>
       <div id="actions">
+        <img src="assets/icons/actions.png alt="actions">
         <!--use javascript to append the actions-->
       </div>
       <div id="task">
+        <img src="assets/icons/tasks.png alt="tasks">
         <!--use javascript tochange the text of the main task-->
         <p>No new tasks!</p>
       </div>
