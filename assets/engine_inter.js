@@ -69,7 +69,7 @@ class world{//world has the ability to edit the output and is like GM
       return player[6]=possible_rooms[instruction];
     }
     if(instruction =="look"){
-      for(){}
+      for(let look of possible_rooms["look"]){}
     }
   }
 }
