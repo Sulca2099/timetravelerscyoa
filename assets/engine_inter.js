@@ -53,6 +53,7 @@ class world{//world has the ability to edit the output and is like GM
     let univer=json_parse;
   }
   function search(player,instruction){
-    this.univer.//#####WIP
+    let possible_rooms=this.univer[player.location];
+    
   }
 }
