@@ -24,5 +24,22 @@ class soilder{
   }
 }
 class player{
-  constructor()
+  constructor(){
+    let health=100;
+    let power=100;
+    let magic=100;
+    let magic_use=false;
+    let location="";//input the room location
+    let inventory=[];
+  }
+  function damaged(damage){
+    this.health-=damage;
+    if(this.health<0){
+      document.getElementById('').innerText=`you have died!`;//the main text area
+      location="";//the time machine room
+      return 0;
+    }
+  }
+  
+  }
 }
