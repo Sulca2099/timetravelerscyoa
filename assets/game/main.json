@@ -62,7 +62,7 @@
         "look":[{
           "burnt":[{
             "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other have'nt...",
-            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wodden areas.",
+            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wooden areas.",
           }]
         }]
     }
@@ -77,7 +77,7 @@
         "north":"castle",
         "south":"medivevel-park",
         "east":"guard-station",
-        "west":"dinoteller",
+        "west":"dinograveyard",
         "talk to dino daddy":"dinodaddyconversation"
         
       }],
@@ -88,7 +88,7 @@
         "look":[{
           "burnt":[{
             "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other haven't...",
-            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wodden areas.",
+            "false":"People and dinosuars fill this place, chatter gosip and dino poop are everwhere, The village is made out of stone, but their are many wooden areas.",
           }]
         }]
     }
@@ -96,8 +96,51 @@
   "dinodaddyconversation":[{
       "dependencies":["none"],
       "type":"conversation",
-      "conversation":[{"hello, my name is dino daddy":[{"who are you":[{""}]}]
-  }]
-
+      "conversation":[{"hello, my name is dino daddy":[{"who are you":"Dino diddy daddy I am one of the keepers of the dinograveyard... doobity diddy doo.","can I help you with anything?","Yeah, ok I will give you 30 gold if you can steal the boo of dinospells, a 65myo book that saved us from some dumb astroid."}]
+  }],
+  "dinograveyard":[
+    {
+      "dependencies":["dino"],
+      "type","room",
+      "title":"Ancient lands belonging to the kings, witches and... Dinosuars?",
+      "description":"A big graveyard looms around you with families and friends moruning for their fallen",
+      "goto":[{
+        "north":"castle",
+        "east":"times-square",
+        "bone":"claim",
+        
+      }],
+      "gotowd":[{
+      }],
+      "look":[{"none":"A place that looks like a hotspot for acrheologist to excavate the bones from the graves to research these fascinating creatures"
+      }]
+    }
+  ],
+  "castle":[
+    {
+      "dependencies":["none"],
+      "type","room",
+      "title":"A large castle that looms over the village",
+      "description":"You head over to the villages center, it smells quite bad",
+      "goto":[{
+        "north":"castle",
+        "south":"medivevel-park",
+        "east":"guard-station",
+        "west":"dinograveyard",
+        "talk to dino daddy":"dinodaddyconversation"
+        
+      }],
+      "gotowd":[{
+        "book":[{"claim","burnt":"medievel-park"}],
+        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","SGDSGDSGDSGD"}],
+      }],
+        "look":[{
+          "burnt":[{
+            "true":"",
+            "false":"People and dinosuars fill this place, chatter gosip and dino poop are everwhere, The village is made out of stone, but their are many wooden areas.",
+          }]
+        }]
+    }
+  ]
 
 }
