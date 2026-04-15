@@ -1,4 +1,15 @@
 //in the cache JSON.stringify()
+function attributify(attributes){//converts attributes in a string
+  if("dino" in attributes && "goodwitch"){
+    return "all"
+  }
+  else if(attributes===["dino"]){
+    return "dino"
+  }
+  else if(attributes===[]){
+    return "none"
+  } 
+}
 class soilder{
   constructor(health,power){
     let health=health;
@@ -53,7 +64,7 @@ class world{//world has the ability to edit the output and is like GM
     let univer=json_parse;
   }
   function search(player,instruction){
-    let possible_rooms=this.univer[player.location];
+    let possible_rooms=this.univer[player.location][attributify(time_attribute)];
     
   }
 }
