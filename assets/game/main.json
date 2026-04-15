@@ -70,7 +70,7 @@
   "times-square":[
     {
       "dependencies":["dino"],
-      "type","room",
+      "type":"room",
       "title":"Ancient lands belonging to the kings, witches and... Dinosuars?",
       "description":"You head over to the villages center, it smells quite bad",
       "goto":[{
@@ -101,7 +101,7 @@
   "dinograveyard":[
     {
       "dependencies":["dino"],
-      "type","room",
+      "type":"room",
       "title":"Ancient lands belonging to the kings, witches and... Dinosuars?",
       "description":"A big graveyard looms around you with families and friends moruning for their fallen",
       "goto":[{
@@ -119,28 +119,47 @@
   "castle":[
     {
       "dependencies":["none"],
-      "type","room",
+      "type":"room",
       "title":"A large castle that looms over the village",
       "description":"You head over to the villages center, it smells quite bad",
       "goto":[{
-        "north":"castle",
-        "south":"medivevel-park",
-        "east":"guard-station",
-        "west":"dinograveyard",
-        "talk to dino daddy":"dinodaddyconversation"
+        "south":"times-square",
+        "talk to king":"kingconversation",
         
       }],
       "gotowd":[{
-        "book":[{"claim","burnt":"medievel-park"}],
+        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGSGSGSG"}],
+      }],
+        "look":[{
+          "burnt":[{
+            "true":"it appears a pyromaniac has started a fire that is killing everyone. What weirdo would do such a thing?",
+            "false":"people are protesting against some rando king",
+          }]
+        }]
+    }
+  ],
+    "castle":[
+    {
+      "dependencies":["dino"],
+      "type":"room",
+      "title":"A large castle that looms over the dino-village",
+      "description":"You head over to the villages center, it smells quite bad",
+      "goto":[{
+        "south":"times-square",
+        "talk to king":"kingconversation",
+        
+      }],
+      "gotowd":[{
         "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGDSGDSGDSGD"}],
       }],
         "look":[{
           "burnt":[{
-            "true":"it appears a pyromaniac has started a fire that is killing everyone. What monster woulddo such a thing?",
-            "false":"people are protesting against somerando king",
+            "true":"it appears a pyromaniac has started a fire that is killing everyone. What weirdo would do such a thing?",
+            "false":"people are protesting against some rando king",
           }]
         }]
     }
   ]
+    
 
 }
