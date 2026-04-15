@@ -2,6 +2,7 @@
   "room":[
     {
       "dependencies":["none"],
+      "type":"room",
       "title":"Everywhere in Time and space",
       "description":"you look around, left and right all doors... Locked\rYou see a pedistal with holes for two stones three doors are unlocked, a door catches your intrest, it says 'home'\ris this your way home?",
       "goto":[{
@@ -23,6 +24,7 @@
     "medievel-park":[
     {
       "dependencies":["none"],
+      "type":"room",
       "title":"Ancient lands belonging to the kings and witches",
       "description":"This is a park filled with peace, lack of sound and the sun looms down at you like a smile",
       "goto":[{
@@ -45,6 +47,7 @@
     "times-square":[
     {
       "dependencies":["none"],
+      "type":"room",
       "title":"Ancient lands belonging to the kings and witches",
       "description":"You head over to the villages center, it smells quite bad",
       "goto":[{
@@ -54,7 +57,6 @@
         "west":"graveyard"
       }],
       "gotowd":[{
-        "book":[{"claim","burnt":"medievel-park"}],
         "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGSGSGSG"}],
       }],
         "look":[{
@@ -65,6 +67,37 @@
         }]
     }
   ]
+  "times-square":[
+    {
+      "dependencies":["dino"],
+      "type","room",
+      "title":"Ancient lands belonging to the kings, witches and... Dinosuars?",
+      "description":"You head over to the villages center, it smells quite bad",
+      "goto":[{
+        "north":"castle",
+        "south":"medivevel-park",
+        "east":"guard-station",
+        "west":"dinoteller",
+        "talk to dino daddy":"dinodaddyconversation"
+        
+      }],
+      "gotowd":[{
+        "book":[{"claim","burnt":"medievel-park"}],
+        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","SGDSGDSGDSGD"}],
+      }],
+        "look":[{
+          "burnt":[{
+            "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other haven't...",
+            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wodden areas.",
+          }]
+        }]
+    }
+  ]
+  "dinodaddyconversation":[{
+      "dependencies":["none"],
+      "type":"conversation",
+      "conversation":[{"hello, my name is dino daddy":[{"who are you":[{}]}]
+  }]
 
 
 }
