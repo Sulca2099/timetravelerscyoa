@@ -46,7 +46,7 @@
   
     "times-square":[
     {
-      "dependencies":["none"],
+      "dependencies":[{"none":[{
       "type":"room",
       "title":"Ancient lands belonging to the kings and witches",
       "description":"You head over to the villages center, it smells quite bad",
@@ -65,11 +65,9 @@
             "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wooden areas.",
           }]
         }]
-    }
-  ]
-  "times-square":[
+      }],
+  "dino":[
     {
-      "dependencies":["dino"],
       "type":"room",
       "title":"Ancient lands belonging to the kings, witches and... Dinosuars?",
       "description":"You head over to the villages center, it smells quite bad",
@@ -92,7 +90,7 @@
           }]
         }]
     }
-  ]
+  ]}],
   "dinodaddyconversation":[{
       "dependencies":["none"],
       "type":"conversation",
@@ -118,7 +116,7 @@
   ],
   "castle":[
     {
-      "dependencies":["none"],
+      "dependencies":[{"none":[{
       "type":"room",
       "title":"A large castle that looms over the village",
       "description":"You head over to the villages center, it smells quite bad",
@@ -136,11 +134,9 @@
             "false":"people are protesting against some rando king",
           }]
         }]
-    }
-  ],
-    "castle":[
+    }],
+    "dino":[
     {
-      "dependencies":["dino"],
       "type":"room",
       "title":"A large castle that looms over the dino-village",
       "description":"You head over to the villages center, it smells quite bad",
@@ -159,7 +155,7 @@
           }]
         }]
     }
-  ]
+  ]}]
     
 
 }
