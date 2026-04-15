@@ -64,7 +64,12 @@ class world{//world has the ability to edit the output and is like GM
     let univer=json_parse;
   }
   function search(player,instruction){
-    let possible_rooms=this.univer[player.location][attributify(time_attribute)];
-    
+    let possible_rooms=this.univer[player[6]][attributify(time_attribute)];
+    if(instruction in ["north","south","east","west"]){
+      return player[6]=possible_rooms[instruction];
+    }
+    if(instruction =="look"){
+      for(){}
+    }
   }
 }
