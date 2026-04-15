@@ -62,14 +62,18 @@ class world{//world has the ability to edit the output and is like GM
     let time_attributes=[];//the attributes for the timeline
     let enemies=[];//enemy list
     let univer=json_parse;
+    let possible_rooms;
   }
   function search(player,instruction){
-    let possible_rooms=this.univer[player[6]][attributify(time_attribute)];
+    this.possible_rooms=this.univer[player[6]][attributify(time_attribute)];
     if(instruction in ["north","south","east","west"]){
       return player[6]=possible_rooms[instruction];
     }
     if(instruction =="look"){
       for(let look of possible_rooms["look"]){}
     }
+  }
+  function readToMe(){
+   document.getElementById('').innerText+=this.possible_rooms.description;//enter main areas id here
   }
 }
