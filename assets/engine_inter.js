@@ -31,6 +31,9 @@ class player{
     let magic_use=false;
     let location="";//input the room location
     let inventory=[];
+    let world_attributes=[];
+    let self_actions=[];
+    let claim=[];
   }
   function damaged(damage){
     this.health-=damage;
