@@ -1,3 +1,4 @@
+//store the classes in the cache 
 class soilder{
   constructor(health,power){
     let health=health;
@@ -21,4 +22,7 @@ class soilder{
       return `soilder ${id} is dead`
     }
   }
+}
+class player{
+  constructor()
 }
