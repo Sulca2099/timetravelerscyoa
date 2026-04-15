@@ -25,24 +25,25 @@ class soilder{
 }
 class player{
   constructor(){
-    let health=100;
-    let power=100;
-    let magic=100;
-    let magic_use=false;
-    let location="";//input the room location
-    let inventory=[];
-    let world_attributes=[];
-    let self_actions=[];
-    let claim=[];
+    let stats=[100,100,100,false,[],[],[],""];//health, power, magic, use magic, claim list, inventory, burn list, location
   }
   function damaged(damage){
     this.health-=damage;
     if(this.health<0){
       document.getElementById('').innerText=`you have died!`;//the main text area
-      location="";//the time machine room
+      this.stats[6]="";//the time machine room
+      this.stats[0]=100;
       return 0;
     }
   }
-  
+  function goto(world,instruction){
+    this.stats=world.search(this);
   }
+  function burn(){
+    if(this.stats[3]){
+      this.stats[5].push(this.stats[6]);
+    };
+    return 0;
+  }
+  
 }
