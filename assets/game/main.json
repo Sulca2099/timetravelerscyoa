@@ -96,7 +96,7 @@
   "dinodaddyconversation":[{
       "dependencies":["none"],
       "type":"conversation",
-      "conversation":[{"hello, my name is dino daddy":[{"who are you":[{}]}]
+      "conversation":[{"hello, my name is dino daddy":[{"who are you":[{""}]}]
   }]
 
 
