@@ -8,10 +8,10 @@
       "goto":[{
         "red door":"medevil-park",
         "blue door":"future-lab",
-        "green door":"65mya",
+        "green door":"65mya"
       }],
       "gotowd":[{
-        "none"
+        "none":"true"
       }],
         "look":[{
           "rock":[{
@@ -23,16 +23,16 @@
   ],
     "medievel-park":[
     {
-      "dependencies":["none"],
+      "dependencies":[{"none":"true"}],
       "type":"room",
       "title":"Ancient lands belonging to the kings and witches",
       "description":"This is a park filled with peace, lack of sound and the sun looms down at you like a smile",
       "goto":[{
         "north":"times-square",
-        "south":"witches-hut",
+        "south":"witches-hut"
       }],
       "gotowd":[{
-        "book":[{"claim","burnt":"medievel-park"}],
+        "book":[{"claim":"true","burnt":"medievel-park"}],
         "burn":[{"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...","none"}],
       }],
         "look":[{
@@ -80,13 +80,13 @@
         
       }],
       "gotowd":[{
-        "book":[{"claim","burnt":"medievel-park"}],
+        "book":[{"claim":"true","burnt":"medievel-park"}],
         "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","SGDSGDSGDSGD"}],
       }],
         "look":[{
           "burnt":[{
             "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other haven't...",
-            "false":"People and dinosuars fill this place, chatter gosip and dino poop are everwhere, The village is made out of stone, but their are many wooden areas.",
+            "false":"People and dinosuars fill this place, chatter gosip and dino poop are everwhere, The village is made out of stone, but their are many wooden areas."
           }]
         }]
     }
@@ -94,7 +94,7 @@
   "dinodaddyconversation":[{
       "dependencies":["none"],
       "type":"conversation",
-      "conversation":[{"hello, my name is dino daddy":[{"who are you":"Dino diddy daddy I am one of the keepers of the dinograveyard... doobity diddy doo.","can I help you with anything?","Yeah, ok I will give you 30 gold if you can steal the boo of dinospells, a 65myo book that saved us from some dumb astroid."}]
+      "conversation":[{"hello, my name is dino daddy":[{"who are you":"Dino diddy daddy I am one of the keepers of the dinograveyard... doobity diddy doo.","can I help you with anything?":"Yeah, ok I will give you 30 gold if you can steal the boo of dinospells, a 65myo book that saved us from some dumb astroid."}]
   }],
   "dinograveyard":[
     {

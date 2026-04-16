@@ -69,7 +69,7 @@ class world{//world has the ability to edit the output and is like GM
     let possible_rooms;
   }
   search(player,instruction){
-    this.possible_rooms=this.univer[player[6]][attributify(time_attribute)];
+    this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
     if(instruction in ["north","south","east","west"]){
       return player[6]=possible_rooms[instruction];
     }
