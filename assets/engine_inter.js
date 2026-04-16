@@ -13,6 +13,9 @@ function attributify(attributes){//converts attributes in a string
 function buttonify(name,buttonoutput){
     return `<button class="action_button" onclick="theplayer.goto(${name})">${name}</button>`
 }
+function changetolist(varoriginal){
+  return {"burnt":5}[varoriginal]
+}
 class soilder{
   constructor(health,power){
     let health=health;
@@ -82,6 +85,14 @@ class world{//world has the ability to edit the output and is like GM
           document.getElementById('dynamictext').innerText+=this.possible_rooms["burnt"]["false"];
         }
       }
+      for(let showvar of goto){
+        document.getElementById('dynamictext').innerText+=showvar;
+      }
+      for(let showvar of gotow){
+        if(get_here[1][1] in player.stats[changetolist(get_here[1])]){
+            document.getElementById('dynamictext').innerText+=showvar;
+         }
+     }
     }
     if("goto" in instruction){
       let get_item=instruction[1];
@@ -96,7 +107,7 @@ class world{//world has the ability to edit the output and is like GM
       }
       for(let get_here of possible_rooms.gotow){
         if(get_here===get_item){
-          if("claim" in get_here &&){
+          if("claim" in get_here && get_here[1][1] in player.stats[changetolist(get_here[1])]){
             player[4].push(get_here);
             player[3].push(get_here);
             break;
