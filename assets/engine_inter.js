@@ -83,6 +83,17 @@ class world{//world has the ability to edit the output and is like GM
         }
       }
     }
+    if("goto" in instruction){
+      let get_item=instruction[1];
+      for(let get_here of possible_rooms.goto){
+        if(get_here===get_item){
+          if("claim" in get_here){
+            player[4].push(get_here);
+            player[3].push(get_here);
+          }
+        }
+      }
+    }
   }
   readToMe(){
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
