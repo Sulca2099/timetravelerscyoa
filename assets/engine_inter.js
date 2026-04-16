@@ -44,7 +44,7 @@ class player{//this stores the health information and inventory
   damaged(damage){
     this.health-=damage;
     if(this.health<0){
-      document.getElementById('').innerText="you have died!";//the main text area
+      document.getElementById('dynamictext').innerText="you have died!";//the main text area
       this.stats[6]="";//the time machine room
       this.stats[0]=100;
       return 0;
@@ -78,7 +78,7 @@ class world{//world has the ability to edit the output and is like GM
     }
   }
   readToMe(){
-   document.getElementById('').innerText+=this.possible_rooms.description;//enter main areas id here
-   
+   document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
+
   }
 }
