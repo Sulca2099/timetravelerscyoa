@@ -103,14 +103,21 @@ class world{//world has the ability to edit the output and is like GM
             player[3].push(get_here);
             break;
           }
+          else{
+            player[6]=get_here[0];//changes location
+          }
         }
       }
       for(let get_here of possible_rooms.gotow){
         if(get_here===get_item){
-          if("claim" in get_here && get_here[1][1] in player.stats[changetolist(get_here[1])]){
-            player[4].push(get_here);
-            player[3].push(get_here);
-            break;
+          if(get_here[1][1] in player.stats[changetolist(get_here[1])]){
+            if("claim" in get_here){
+              player[4].push(get_here);
+              player[3].push(get_here);
+              break;
+            } else{
+              player[6]=get_here[0];
+            }
           }
         }
       }
