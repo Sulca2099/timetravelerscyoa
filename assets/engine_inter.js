@@ -1,6 +1,6 @@
 //in the cache JSON.stringify()
 function attributify(attributes){//converts attributes in a string
-  if("dino" in attributes && "goodwitch"){
+  if("dino" in attributes && "goodwitch" in attributes){
     return "all"
   }
   else if(attributes===["dino"]){
