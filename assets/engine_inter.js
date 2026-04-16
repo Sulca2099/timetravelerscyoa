@@ -96,7 +96,7 @@ class world{//world has the ability to edit the output and is like GM
       }
       for(let get_here of possible_rooms.gotow){
         if(get_here===get_item){
-          if("claim" in get_here){
+          if("claim" in get_here &&){
             player[4].push(get_here);
             player[3].push(get_here);
             break;
