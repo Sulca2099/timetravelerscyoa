@@ -76,7 +76,10 @@ class world{//world has the ability to edit the output and is like GM
     if(instruction =="look"){
       for(let look of possible_rooms["look"]){
         if(look==="burnt" && player.stats[6] in player.stats[5]){
-          document.getElementById('dynamictext').innerText+=this.possible_rooms
+          document.getElementById('dynamictext').innerText+=this.possible_rooms["burnt"]["true"];
+        }
+        else if(look==="burnt" && !(player.stats[6] in player.stats[5])){
+          document.getElementById('dynamictext').innerText+=this.possible_rooms["burnt"]["false"];
         }
       }
     }
