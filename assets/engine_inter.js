@@ -10,6 +10,9 @@ function attributify(attributes){//converts attributes in a string
     return "none"
   } 
 }
+function buttonify(name,buttonoutput){
+    return `<button class="action_button" onclick="theplayer.goto(${name})">${name}</button>`
+}
 class soilder{
   constructor(health,power){
     let health=health;
@@ -76,5 +79,6 @@ class world{//world has the ability to edit the output and is like GM
   }
   readToMe(){
    document.getElementById('').innerText+=this.possible_rooms.description;//enter main areas id here
+   
   }
 }
