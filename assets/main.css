@@ -7,10 +7,18 @@
 }
 #topleftbuttons{
    margin:left;
+   width:50%;
+   height:10%;
+   top:0 !important;
 }
 #toprightbuttons{
   margin:right;
+  width:50%;
+  height:10%;
+  top:0 !important;
 }
 #maintext{
   justify-content:center;
+  width:90%;
+  height:80%;
 }
