@@ -62,6 +62,7 @@ class player{//this stores the health information and inventory
   }
   goto(world,instruction){
     this.stats=world.search(this,instruction);
+    return world;
   }
   burn(){
     if(this.stats[3]){
@@ -165,6 +166,6 @@ function maingame(document){
     }
     alertwithbuttons.buttonused=false;
     docont=true;
-    you.goto(gamemaker,alertwithbuttons.command);
+    gamemaker=you.goto(gamemaker,alertwithbuttons.command);
   }
 }
