@@ -1,1 +1,14 @@
+:root{
+  --color-theme:#857510;/*#857510, #e3d88f;*/
+  image-rendering:-moz-crisp-edges;
+  image-rendering:crisp-edges;
+  image-rendering:pixelated;
+ 
+}
+topleftbuttons{
+   margin:left;
+}
+toprightbuttons{
+  margin:right;
+}
 
