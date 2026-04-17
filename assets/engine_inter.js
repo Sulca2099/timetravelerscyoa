@@ -142,6 +142,7 @@ class world{//world has the ability to edit the output and is like GM
         }
       }
     }
+  return player.stats;
   }
   readToMe(){
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
@@ -164,5 +165,6 @@ function maingame(document){
     }
     alertwithbuttons.buttonused=false;
     docont=true;
+    you.goto(gamemaker,alertwithbuttons.command);
   }
 }
