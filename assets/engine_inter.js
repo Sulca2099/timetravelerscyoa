@@ -153,7 +153,7 @@ class world{//world has the ability to edit the output and is like GM
     this.document=document2;
   }
 }
-function maingame(document){
+export function maingame(document){
   let gamemaker=world(JSON.parse(fetch("/game/main.json")),document);
   let you=player(gamemaker.document);
   let command="";
