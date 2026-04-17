@@ -167,5 +167,6 @@ function maingame(document){
     alertwithbuttons.buttonused=false;
     docont=true;
     gamemaker=you.goto(gamemaker,alertwithbuttons.command);
+    //crude
   }
 }
