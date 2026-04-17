@@ -71,7 +71,8 @@ class world{//world has the ability to edit the output and is like GM
     let univer=json_parse;
     let possible_rooms;
   }
-  search(player,instruction){
+  search(player,strinstruction){
+    let instruction=split(strinstruction);
     this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
     if(instruction in ["north","south","east","west"]){
       return player[6]=possible_rooms[instruction];
