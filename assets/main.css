@@ -6,13 +6,13 @@
  
 }
 #topleftbuttons{
-   margin:left;
+   margin-left:10%;
    width:50%;
    height:10%;
    top:0 !important;
 }
 #toprightbuttons{
-  margin:right;
+  margin-right:10%;
   width:50%;
   height:10%;
   top:0 !important;
