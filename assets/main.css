@@ -5,16 +5,17 @@
   image-rendering:pixelated;
  
 }
-#topleftbuttons{
-   margin-left:10%;
+.organizedside{
    width:50%;
    height:10%;
+   border:2px;
+}
+#topleftbuttons{
+   margin-left:10%;
    top:0 !important;
 }
 #toprightbuttons{
   margin-right:10%;
-  width:50%;
-  height:10%;
   top:0 !important;
 }
 #maintext{
