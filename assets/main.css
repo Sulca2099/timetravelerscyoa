@@ -5,10 +5,12 @@
   image-rendering:pixelated;
  
 }
-topleftbuttons{
+#topleftbuttons{
    margin:left;
 }
-toprightbuttons{
+#toprightbuttons{
   margin:right;
 }
-
+#maintext{
+  justify-content:center;
+}
