@@ -10,8 +10,13 @@ function attributify(attributes){//converts attributes in a string
     return "none"
   } 
 }
+const alertwithbutton{buttonused:false; command:"";}
 function buttonify(name,buttonoutput){
     return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
+}
+function letsdo(command){
+  alertwithbutton.buttonused=true;
+  alertwithbutton.command=command;
 }
 function changetolist(varoriginal){
   return {"burnt":5}[varoriginal]
@@ -148,8 +153,9 @@ class world{//world has the ability to edit the output and is like GM
 }
 function maingame(document){
   let gamemaker=world(JSON.parse(fetch("/game/main.json")),document);
-  let you=player;
+  let you=player(gamemaker.document);
+  let command="";
   while(true){
-    
+    command=await 
   }
 }
