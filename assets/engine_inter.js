@@ -11,7 +11,7 @@ function attributify(attributes){//converts attributes in a string
   } 
 }
 function buttonify(name,buttonoutput){
-    return `<button class="action_button" onclick="theplayer.goto(${name})">${name}</button>`
+    return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
 }
 function changetolist(varoriginal){
   return {"burnt":5}[varoriginal]
@@ -41,13 +41,14 @@ class soilder{
   }
 }
 class player{//this stores the health information and inventory
-  constructor(){
+  constructor(document){
     let stats=[100,100,100,false,[],[],[],""];//health, power, magic, use magic, claim list, inventory, burn list, location
+    let document=document;
   }
   damaged(damage){
     this.health-=damage;
     if(this.health<0){
-      document.getElementById('dynamictext').innerText="you have died!";//the main text area
+      this.document.getElementById('dynamictext').innerText="you have died!";//the main text area
       this.stats[6]="";//the time machine room
       this.stats[0]=100;
       return 0;
@@ -63,13 +64,17 @@ class player{//this stores the health information and inventory
     };
     return 0;
   }
+  updatedocument(document2){
+    this.document=document2;
+  }
 };
 class world{//world has the ability to edit the output and is like GM
-  constructor(json_parse){
+  constructor(json_parse,document){
     let time_attributes=[];//the attributes for the timeline
     let enemies=[];//enemy list
     let univer=json_parse;
     let possible_rooms;
+    let document;
   }
   search(player,strinstruction){
     let instruction=split(strinstruction);
@@ -136,5 +141,15 @@ class world{//world has the ability to edit the output and is like GM
   readToMe(){
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
 
+  }
+  updatedocuemt(document2){
+    this.document=document2;
+  }
+}
+function maingame(document){
+  let gamemaker=world(JSON.parse(fetch("/game/main.json")),document);
+  let you=player;
+  while(true){
+    
   }
 }
