@@ -155,7 +155,14 @@ function maingame(document){
   let gamemaker=world(JSON.parse(fetch("/game/main.json")),document);
   let you=player(gamemaker.document);
   let command="";
+  let docont=true;
+  const wait1sec = (s) => Promise(resolve=>setTimeout(resolve,s*1000);
   while(true){
-    command=await 
+    while(docont){
+      docont=!(alertwithbuttons.buttonused);
+      await wait1sec(1);  
+    }
+    alertwithbuttons.buttonused=false;
+    docont=true;
   }
 }
