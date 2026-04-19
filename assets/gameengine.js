@@ -1,4 +1,4 @@
-import * from './engine_inter.js';
+import * from 'engine_inter.js';
 class iframeButton{}//a button that loads a popup to a diffirent html page 
 class simpleButton{}// a button that bdisplays simple varibles
 class person{}//the persons health, inventory
