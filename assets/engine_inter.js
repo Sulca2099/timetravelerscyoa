@@ -11,7 +11,7 @@ function attributify(attributes){//converts attributes in a string
   } 
 }
 const alertwithbutton{buttonused:false; command:"";}
-function buttonify(name,buttonoutput){
+export function buttonify(name,buttonoutput){
     return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
 }
 function letsdo(command){
