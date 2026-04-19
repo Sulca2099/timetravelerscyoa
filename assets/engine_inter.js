@@ -22,9 +22,9 @@ function changetolist(varoriginal){
   return {"burnt":5}[varoriginal]
 }
 class soilder{
-  constructor(health,power){
-    let health=health;
-    let power=power;
+  constructor(thealth,tower){
+    let health=thealth;
+    let power=tpower;
     
   }
   doDamage(damage){
