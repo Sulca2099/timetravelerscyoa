@@ -8,20 +8,20 @@
     <script type="module" src="./assets/engine_inter.js"></script>
     <script onload="alert('loading');" src="./assets/gameengine.js"></script>
     <div id="topleftbuttons" class="organizedside"><!--this is the top bar for the main descriptions of the players stats, the buttons will disapear when their is none of that, loiie when you haven't drank the potion the magic will be gone-->
-      <button id="health" onclick="Health.showAdvanced()"><img src="/assets/icons/health.png alt="health"></button>
-      <button id="power" onclick="Power.showAdvanced()"><img src="/assets/icons/strength.png alt="power"></button>
-      <button id="magic" onclick="Magic.showAdvanced()"><img src="/assets/icons/magic.png alt="magic"></button>
+      <button id="health" onclick="Health.showAdvanced()"><img src="/assets/icons/health.png" alt="health"></button>
+      <button id="power" onclick="Power.showAdvanced()"><img src="/assets/icons/strength.png" alt="power"></button>
+      <button id="magic" onclick="Magic.showAdvanced()"><img src="/assets/icons/magic.png" alt="magic"></button>
     </div>
     <div id="toprightbuttons" class="organizedside"><!--this is the top bar for the right for more informations and congfigurations to the game-->
-      <button id="settings" onclick="Settings.showAdvanced()"><img src="/assets/icons/settings.png alt="settings"></button>
-      <button id="inventory" onclick="inventory.showAdvanced()"><img src="/assets/icons/inventory.png alt="inventory"></button>
-      <button id="Map" onclick="Map.showAdvanced()"><img src="/assets/icons/map.png alt="map"></button>
+      <button id="settings" onclick="Settings.showAdvanced()"><img src="/assets/icons/settings.png" alt="settings"></button>
+      <button id="inventory" onclick="inventory.showAdvanced()"><img src="/assets/icons/inventory.png" alt="inventory"></button>
+      <button id="Map" onclick="Map.showAdvanced()"><img src="/assets/icons/map.png" alt="map"></button>
     </div>
     <div id="maintext">
       <!--this is forthe large center scroolable text that can is interactive and explains the story-->
       <p id="dynamictext">Welcome to Time Choice</p>
     </div>
-    <div id="bottombuttons" class="organizedside>
+    <div id="bottombuttons" class="organizedside">
       <div id="compass"><!--a compass image with theses directions on, they will be higligyted in blue when the direction is legal-->
         <img src="./assets/icons/compass.png" alt="compass_img">
         <button id="north" onclick="letsdo('goto north');"></button>
