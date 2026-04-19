@@ -10,7 +10,7 @@ function attributify(attributes){//converts attributes in a string
     return "none"
   } 
 }
-const alertwithbutton={buttonused:false; command:"";}
+const alertwithbutton={buttonused:false; command:"";};
 export function buttonify(name,buttonoutput){
     return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
 }
