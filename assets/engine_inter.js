@@ -45,7 +45,7 @@ class soilder{
     }
   }
 }
-class player{//this stores the health information and inventory
+class the_player{//this stores the health information and inventory
   constructor(document){
     let stats=[100,100,100,false,[],[],[],""];//health, power, magic, use magic, claim list, inventory, burn list, location
     //let document=document;
@@ -153,7 +153,7 @@ class world{//world has the ability to edit the output and is like GM
 function maingame(document){
   alert("loaded");
   let gamemaker=new world(JSON.parse(fetch("./game/main.json")));
-  let you=new player();
+  let you=new the_player();
   let command="";
   let docont=true;
   const wait1sec = (s) => Promise(resolve=>setTimeout(resolve,s*1000);
