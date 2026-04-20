@@ -48,7 +48,7 @@ class soilder{
 class player{//this stores the health information and inventory
   constructor(document){
     let stats=[100,100,100,false,[],[],[],""];//health, power, magic, use magic, claim list, inventory, burn list, location
-    let document=document;
+    //let document=document;
   }
   damaged(damage){
     this.health-=damage;
@@ -80,7 +80,7 @@ class world{//world has the ability to edit the output and is like GM
     let enemies=[];//enemy list
     let univer=json_parse;
     let possible_rooms;
-    let document;
+    //let document;
   }
   search(player,strinstruction){
     let instruction=split(strinstruction);
