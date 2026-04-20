@@ -141,9 +141,10 @@ class world{//world has the ability to edit the output and is like GM
           }
         }
       }
-    }
     return player;
-  }
+    }
+    
+  
   readToMe(){
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
 
@@ -168,6 +169,7 @@ function maingame(document){
     //crude
   }
 }
+
 class iframeButton{}//a button that loads a popup to a diffirent html page 
 class simpleButton{}// a button that bdisplays simple varibles
 class person{}//the persons health, inventory
