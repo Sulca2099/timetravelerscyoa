@@ -152,8 +152,8 @@ class world{//world has the ability to edit the output and is like GM
 }
 function maingame(document){
   alert("loaded");
-  let gamemaker=world(JSON.parse(fetch("./game/main.json")));
-  let you=player();
+  let gamemaker=new world(JSON.parse(fetch("./game/main.json")));
+  let you=new player();
   let command="";
   let docont=true;
   const wait1sec = (s) => Promise(resolve=>setTimeout(resolve,s*1000);
