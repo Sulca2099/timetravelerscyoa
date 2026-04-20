@@ -162,7 +162,7 @@ function maingame(document){
   while(true){
     while(docont){
       docont=!(alertwithbuttons.buttonused);
-      await wait1sec(1);  
+      wait1sec(1);  
     }
     alertwithbuttons.buttonused=false;
     docont=true;
