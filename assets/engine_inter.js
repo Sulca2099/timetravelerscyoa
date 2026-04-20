@@ -140,9 +140,10 @@ class world{//world has the ability to edit the output and is like GM
             }
           }
         }
+       return player;
       }
-      return player;
-    }
+     
+    
     
   
   readToMe(){
