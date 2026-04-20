@@ -1,16 +1,20 @@
 :root{
   --color-theme:#857510;/*#857510, #e3d88f;*/
+  
+ 
+}
+
+.organizedside{
+   width:50%;
+   height:10%;
+   border:2px;
+}
+#bodyall{
   image-rendering:-moz-crisp-edges;
   image-rendering:crisp-edges;
   image-rendering:pixelated;
   justify-content:center;
   text-align:center;
- 
-}
-.organizedside{
-   width:50%;
-   height:10%;
-   border:2px;
 }
 #topleftbuttons{
    margin-left:10%;
