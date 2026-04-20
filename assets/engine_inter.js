@@ -14,7 +14,7 @@ const alertwithbutton={buttonused:false, command:""};
 function buttonify(name,buttonoutput){
     return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
 }
-export function letsdo(command){
+function letsdo(command){
   alertwithbutton.buttonused=true;
   alertwithbutton.command=command;
 }
@@ -153,7 +153,7 @@ class world{//world has the ability to edit the output and is like GM
     this.document=document2;
   }
 }
-export function maingame(document){
+function maingame(document){
   alert("loaded");
   let gamemaker=world(JSON.parse(fetch("./game/main.json")),document);
   let you=player(gamemaker.document);
