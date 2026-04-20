@@ -9,10 +9,13 @@ class gotoobj():
     self.dependencies=dependencies
   def runquestions(self):
     if type==0:
-      #if:
-      pass
+      self.specs=[input("claimable? ")]
+      if self.dependencies:
+        self.specs.append(input("required property in list? "))
+    if type==1:
+      self.specs=[input("input dependency code all, dino, none:"), [input("look when burned: "),input("natural: ")] if input("burnable? ").lower()=="y" else input("look natural: ")]
 while(True):
-  dire=gotoobj(input("name: "),input("type 0-room 1-object: ",input("dependencies? y/n: "))
+  dire=gotoobj(input("name: "),input("type 0-object 1-object: ",input("dependencies? y/n: "))
   dire.runquestions()
   
       
