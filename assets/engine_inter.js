@@ -70,12 +70,10 @@ class player{//this stores the health information and inventory
     };
     return 0;
   }
-  updatedocument(document2){
-    this.document=document2;
-  }
+  
 };
 class world{//world has the ability to edit the output and is like GM
-  constructor(json_parse,document){
+  constructor(json_parse){
     let time_attributes=[];//the attributes for the timeline
     let enemies=[];//enemy list
     let univer=json_parse;
@@ -149,14 +147,12 @@ class world{//world has the ability to edit the output and is like GM
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
 
   }
-  updatedocuemt(document2){
-    this.document=document2;
-  }
+  
 }
 function maingame(document){
   alert("loaded");
-  let gamemaker=world(JSON.parse(fetch("./game/main.json")),document);
-  let you=player(gamemaker.document);
+  let gamemaker=world(JSON.parse(fetch("./game/main.json")));
+  let you=player();
   let command="";
   let docont=true;
   const wait1sec = (s) => Promise(resolve=>setTimeout(resolve,s*1000);
