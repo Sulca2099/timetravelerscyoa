@@ -142,7 +142,7 @@ class world{//world has the ability to edit the output and is like GM
         }
       }
     }
-    return player;
+    return the_player;
   }
   readToMe(){
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
