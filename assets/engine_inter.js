@@ -80,7 +80,8 @@ class world{//world has the ability to edit the output and is like GM
     let possible_rooms;
     //let document;
   }
-  search(player,strinstruction){
+  search(roplayer,strinstruction){
+    let player=roplayer.stats;
     let instruction=split(strinstruction);
     this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
     if(instruction in ["north","south","east","west"]){
@@ -120,7 +121,7 @@ class world{//world has the ability to edit the output and is like GM
       }
       for(let get_here of possible_rooms.gotow){
         if(get_here===get_item){
-          if(get_here[1][1] in player.stats[changetolist(get_here[1])]){
+          if(get_here[1][1] in player[changetolist(get_here[1])]){
             if("claim" in get_here){
               player[4].push(get_here);
               player[3].push(get_here);
