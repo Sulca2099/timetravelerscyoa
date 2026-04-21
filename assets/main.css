@@ -28,3 +28,6 @@
   width:90%;
   height:80%;
 }
+#upperbar{
+  display:flex;
+}
