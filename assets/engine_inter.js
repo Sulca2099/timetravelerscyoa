@@ -144,7 +144,10 @@ class world{//world has the ability to edit the output and is like GM
       }
     if("burn" === instruction[0] && !(location in player.stats[6])){
       player.stats[6].push(location);
-      document.getElementById('dynamictext').innerText+=goto.;
+      document.getElementById('dynamictext').innerText+=gotowd.burn.say;
+      if(gotowd.burn.do){
+        //count sgd or sg
+      }
     }
   } 
     
