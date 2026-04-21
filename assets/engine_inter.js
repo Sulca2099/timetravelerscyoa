@@ -163,7 +163,7 @@ class world{//world has the ability to edit the output and is like GM
 
 function maingame(document){
   alert("loaded");
-  let gamemaker=new world(JSON.parse(fetch("./game/main.json")));
+  let gamemaker=new world(JSON.parse(fetch("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json")));
   let you=new the_player();
   let command="";
   let docont=true;
