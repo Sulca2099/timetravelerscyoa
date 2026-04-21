@@ -167,7 +167,7 @@ function maingame(document){
   let you=new the_player();
   let command="";
   let docont=true;
-  const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));
+  const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));//with AI help
   while(true){
     while(docont){
       docont=!(alertwithbuttons.buttonused);
