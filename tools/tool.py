@@ -2,7 +2,7 @@ print("Public domain, NOT APART OF GAME\rMEANT FOR MODDING PURPOSES AND EASE OF\
 description=input("enter description here: ")
 directions=[]#without dependencies, with dependencies
 class gotoobj():
-  def __init__(self,name,type,dependenccies):
+  def __init__(self,name,type,dependencies):
     self.name=name
     self.type=type
     self.specs=[]
@@ -11,7 +11,7 @@ class gotoobj():
     if type==0:
       self.specs=[input("claimable? ")]
       if self.dependencies:
-        self.specs.append(input("required property in list? "))
+        self.dependencies=input("required property in list? ")
     if type==1:
       self.specs=[input("input dependency code all, dino, none:"), [input("look when burned: "),input("natural: ")] if input("burnable? ").lower()=="y" else input("look natural: ")]
 while(True):

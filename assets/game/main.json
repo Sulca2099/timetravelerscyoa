@@ -1,4 +1,4 @@
-{"_comment":"burn is an action, look is an action, they are handled with the game engine specially, if not in any action, the game engine will look for a varible and compare the value their is alist called burt that has values of the room, when the game engine looks here and sees burt the true means it will print out that value if the place is in the burt list. look is an automatic action that prints out the text dependicies can change this however. claim, is a list that has objects that are claimed, not to be confused with inventory if claimed is in the list, the engine will skip the notice 1 SG in interactive burn means you summon one guard",
+{
   "room":[
     {
       "dependencies":["none"],
@@ -33,19 +33,18 @@
       }],
       "gotowd":[{
         "book":[{"claim":"true","burnt":"medievel-park"}],
-        "burn":[{"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...","none"}],
+        "burn":[{"say":"the park starts smoking...\rBOOM\rfire burst everywhere, nobody is their to save it or do anything...\rCRACK\rA book is reveled from the trunk of a fallen tree. Hours pass by as the forest burns...","do":"none"}]
       }],
         "look":[{
           "burnt":[{
             "true":"the park is filled with a blanket of ash, it looks lifeless, will anybody ever establish this as their home again?",
-            "false":"a beautiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here...",
+            "false":"a beautiful park\rbirds sign, squirrels run up and down trees. It seems like a greate place to stay, but you should be careful with fire here..."
           }]
         }]
     }
   ],
   
-    "times-square":[
-    {
+    "times-square":[{
       "dependencies":[{"none":[{
       "type":"room",
       "title":"Ancient lands belonging to the kings and witches",
@@ -57,15 +56,16 @@
         "west":"graveyard"
       }],
       "gotowd":[{
-        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGSGSGSG"}],
+        "burn":[{"say":"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","do":"SGSGSGSG"}]
       }],
         "look":[{
           "burnt":[{
             "true":"Ash is everywhere and it actually makes you feel a bit sad. Some villagers escaped, other have'nt...",
-            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wooden areas.",
+            "false":"People fill this place, chatter and gosip are everwhere, The village is made out of stone, but their are many wooden areas."
           }]
         }]
-      }],
+      }]
+          }],
   "dino":[
     {
       "type":"room",
@@ -81,7 +81,7 @@
       }],
       "gotowd":[{
         "book":[{"claim":"true","burnt":"medievel-park"}],
-        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","SGDSGDSGDSGD"}],
+        "burn":[{"say":"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". \rDino-daddy tells you to run away. Dino-Guards start to run towards you.","do":"SGDSGDSGDSGD"}]
       }],
         "look":[{
           "burnt":[{
@@ -95,6 +95,7 @@
       "dependencies":["none"],
       "type":"conversation",
       "conversation":[{"hello, my name is dino daddy":[{"who are you":"Dino diddy daddy I am one of the keepers of the dinograveyard... doobity diddy doo.","can I help you with anything?":"Yeah, ok I will give you 30 gold if you can steal the boo of dinospells, a 65myo book that saved us from some dumb astroid."}]
+  }]
   }],
   "dinograveyard":[
     {
@@ -105,7 +106,7 @@
       "goto":[{
         "north":"castle",
         "east":"times-square",
-        "bone":"claim",
+        "bone":"claim"
         
       }],
       "gotowd":[{
@@ -114,48 +115,48 @@
       }]
     }
   ],
-  "castle":[
-    {
-      "dependencies":[{"none":[{
+  "castle":[{
+      "dependencies":[{
+        "none":[{
       "type":"room",
       "title":"A large castle that looms over the village",
       "description":"You head over to the villages center, it smells quite bad",
       "goto":[{
         "south":"times-square",
-        "talk to king":"kingconversation",
+        "talk to king":"kingconversation"
         
       }],
       "gotowd":[{
-        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGSGSGSG"}],
+        "burn":[{"say":"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","do":"SGSGSGSG"}]
       }],
         "look":[{
           "burnt":[{
             "true":"it appears a pyromaniac has started a fire that is killing everyone. What weirdo would do such a thing?",
-            "false":"people are protesting against some rando king",
+            "false":"people are protesting against some rando king"
           }]
         }]
     }],
-    "dino":[
-    {
+    "dino":[{
       "type":"room",
       "title":"A large castle that looms over the dino-village",
       "description":"You head over to the villages center, it smells quite bad",
       "goto":[{
         "south":"times-square",
-        "talk to king":"kingconversation",
+        "talk to king":"kingconversation"
         
       }],
       "gotowd":[{
-        "burn":[{"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","SGDSGDSGDSGD"}],
+        "burn":[{"say":"You use your magic to burn the building, The wicth would be proud...\rsmoke starts filling the land, people yell \"MAGIC\" and \"run\". Guards start to run towards you.","do":"SGDSGDSGDSGD"}]
       }],
         "look":[{
           "burnt":[{
             "true":"it appears a pyromaniac has started a fire that is killing everyone. What weirdo would do such a thing?",
-            "false":"people are protesting against some rando king",
+            "false":"people are protesting against some rando king"
           }]
         }]
-    }
-  ]}]
+    }]
+  }]
+  }]
     
 
 }
