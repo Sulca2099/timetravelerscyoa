@@ -167,12 +167,14 @@ function maingame(document){
   let you=new the_player();
   let command="";
   let docont=true;
+  const letsgobutton = document.getElementById("letsgonow");
   const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));
   while(true){
-    while(docont){
+    /*while(docont){
       docont=!(alertwithbuttons.buttonused);
       wait1sec(1);  
-    }
+    }*/
+    letsgobutton.addEventListener('click')
     alertwithbuttons.buttonused=false;
     docont=true;
     gamemaker=you.goto(gamemaker,alertwithbuttons.command);
