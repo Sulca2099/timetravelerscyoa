@@ -142,6 +142,10 @@ class world{//world has the ability to edit the output and is like GM
         }
        return player;
       }
+    if("burn" === instruction[0] && !(location in player.stats[6])){
+      player.stats[6].push(location);
+      document.getElementById('dynamictext').innerText+=goto.;
+    }
   } 
     
     
