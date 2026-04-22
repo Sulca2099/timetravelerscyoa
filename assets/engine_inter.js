@@ -12,7 +12,7 @@ function attributify(attributes){//converts attributes in a string
 }
 const alertwithbuttons={buttonused:false, command:""};
 function buttonify(name,buttonoutput){
-    return `<button class="action_button" onclick="letsdo(${name})">${name}</button>`
+    return `<button class="action_button" onclick="letsdo(${buttonoutput})">${name}</button>`
 }
 function letsdo(command){
   alertwithbutton.buttonused=true;
