@@ -156,6 +156,7 @@ class world{//world has the ability to edit the output and is like GM
     
   
   readToMe(){
+   this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
    return ;
   }
