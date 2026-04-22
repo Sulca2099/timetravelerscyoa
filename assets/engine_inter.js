@@ -169,6 +169,7 @@ function maingame(document){
   let docont=true;
   const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));//with AI help
   while(true){
+    gamemaker.readToMe();
     while(docont){
       docont=!(alertwithbuttons.buttonused);
       wait1sec(1);  
