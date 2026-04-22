@@ -167,7 +167,7 @@ function maingame(document){
   //this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
   let gamemaker=new world(fetch("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json").then(response=>{if(response.ok){return response.json;} else{alert("ERROR CANT CONNECT TO FILE")}}));
   let you=new the_player();
-  alert(you.stats);
+  alert(you.stats[7]);
   let command="";
   let docont=true;
   const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));//with AI help
