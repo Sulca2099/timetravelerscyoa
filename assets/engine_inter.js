@@ -172,7 +172,7 @@ class world{//world has the ability to edit the output and is like GM
 function maingame(document){
   alert("loaded");
   //this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
-  let gamemaker=new world(fetch("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json").then(response=>response.json()));
+  let gamemaker=new world(await fetch("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json").then(response=>response.json()));
   alert(gamemaker.univer);
   let you=new the_player();
   let command="";
