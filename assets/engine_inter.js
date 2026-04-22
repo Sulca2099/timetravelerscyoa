@@ -47,7 +47,7 @@ class soilder{
 }
 class the_player{//this stores the health information and inventory
   constructor(document){
-    let stats=[100,100,100,false,[],[],[],""];//health, power, magic, use magic, claim list, inventory, burn list, location
+    let stats=[100,100,100,false,[],[],[],"room"];//health, power, magic, use magic, claim list, inventory, burn list, location
     //let document=document;
   }
   damaged(damage){
