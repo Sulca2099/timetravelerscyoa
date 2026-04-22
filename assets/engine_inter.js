@@ -23,8 +23,8 @@ function changetolist(varoriginal){
 }
 class soilder{
   constructor(thealth,tower){
-    let health=thealth;
-    let power=tpower;
+    let this.health=thealth;
+    let this.power=tpower;
     
   }
   doDamage(damage){
@@ -47,7 +47,7 @@ class soilder{
 }
 class the_player{//this stores the health information and inventory
   constructor(document){
-    let stats=[100,100,100,false,[],[],[],"room"];//health, power, magic, use magic, claim list, inventory, burn list, location
+    let this.stats=[100,100,100,false,[],[],[],"room"];//health, power, magic, use magic, claim list, inventory, burn list, location
     //let document=document;
   }
   damaged(damage){
@@ -74,10 +74,10 @@ class the_player{//this stores the health information and inventory
 };
 class world{//world has the ability to edit the output and is like GM
   constructor(json_parse){
-    let time_attributes=[];//the attributes for the timeline
-    let enemies=[];//enemy list
-    let univer=json_parse;
-    let possible_rooms;
+    let this.time_attributes=[];//the attributes for the timeline
+    let this.enemies=[];//enemy list
+    let this.univer=json_parse;
+    let this.possible_rooms;
     //let document;
   }
   search(roplayer,strinstruction){
