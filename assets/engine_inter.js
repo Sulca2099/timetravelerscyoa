@@ -83,7 +83,7 @@ class world{//world has the ability to edit the output and is like GM
   search(roplayer,strinstruction){
     let player=roplayer.stats;
     let instruction=split(strinstruction);
-    this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
+    this.possible_rooms=this.univer[player[7]].dependencies[attributify(time_attributes)];
     if(instruction in ["north","south","east","west"]){
       return player[6]=possible_rooms[instruction];
     }
@@ -156,7 +156,7 @@ class world{//world has the ability to edit the output and is like GM
     
   
   readToMe(player){
-   this.possible_rooms=this.univer[player.stats[6]].dependencies[attributify(time_attributes)];
+   this.possible_rooms=this.univer[player.stats[7]].dependencies[attributify(time_attributes)];
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
    return ;
   }
