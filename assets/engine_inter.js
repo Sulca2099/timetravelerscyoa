@@ -22,8 +22,8 @@ function changetolist(varoriginal){
   return {"burnt":5}[varoriginal]
 }
 class soilder{
-  let health;
-  let power;
+  health;
+  power;
   constructor(thealth,tower){
     this.health=thealth;
     this.power=tpower;
@@ -48,7 +48,7 @@ class soilder{
   }
 }
 class the_player{//this stores the health information and inventory
-  let stats;
+  stats;
   constructor(document){
     this.stats=[100,100,100,false,[],[],[],"room"];//health, power, magic, use magic, claim list, inventory, burn list, location
     //let document=document;
@@ -76,10 +76,10 @@ class the_player{//this stores the health information and inventory
   
 };
 class world{//world has the ability to edit the output and is like GM
-  let time_attributes;
-  let enemies;
-  let univer;
-  let possible_rooms;
+  time_attributes;
+  enemies;
+  univer;
+  possible_rooms;
   constructor(json_parse){
     this.time_attributes=[];//the attributes for the timeline
     this.enemies=[];//enemy list
