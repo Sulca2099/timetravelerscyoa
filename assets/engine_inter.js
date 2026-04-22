@@ -155,8 +155,8 @@ class world{//world has the ability to edit the output and is like GM
     
     
   
-  readToMe(){
-   this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
+  readToMe(player){
+   this.possible_rooms=this.univer[player.stats[6]].dependencies[attributify(time_attributes)];
    document.getElementById('dynamictext').innerText+=this.possible_rooms.description;//enter main areas id here
    return ;
   }
@@ -171,7 +171,7 @@ function maingame(document){
   let docont=true;
   const wait1sec = s => new Promise(resolve=>setTimeout(resolve,s*1000));//with AI help
   while(true){
-    gamemaker.readToMe();
+    gamemaker.readToMe(you);
     while(docont){
       docont=!(alertwithbuttons.buttonused);
       wait1sec(1);  
