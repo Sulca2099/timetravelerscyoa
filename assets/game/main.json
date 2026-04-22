@@ -1,7 +1,7 @@
 {
   "room":[
     {
-      "dependencies":["none"],
+      "dependencies":[{"none":[{
       "type":"room",
       "title":"Everywhere in Time and space",
       "description":"you look around, left and right all doors... Locked\rYou see a pedistal with holes for two stones three doors are unlocked, a door catches your intrest, it says 'home'\ris this your way home?",
@@ -19,8 +19,9 @@
             "1":"the room doors look like they are more welcoming...\rthe rock must have helped"
           }]
         }]
-    }
-  ],
+    }]
+    }]
+  }],
     "medievel-park":[
     {
       "dependencies":[{"none":"true"}],
