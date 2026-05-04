@@ -22,8 +22,8 @@ function changetolist(varoriginal){
   return {"burnt":5}[varoriginal]
 }
 class soilder{
-  health;
-  power;
+  health=100;
+  power=100;
   constructor(thealth,tower){
     this.health=thealth;
     this.power=tpower;
@@ -48,7 +48,7 @@ class soilder{
   }
 }
 class the_player{//this stores the health information and inventory
-  stats;
+  stats=[];
   constructor(document){
     this.stats=[100,100,100,false,[],[],[],"room"];//health, power, magic, use magic, claim list, inventory, burn list, location
     //let document=document;
@@ -76,15 +76,17 @@ class the_player{//this stores the health information and inventory
   
 };
 class world{//world has the ability to edit the output and is like GM
-  time_attributes;
-  enemies;
-  univer;
-  possible_rooms;
-  constructor(json_parse){
+  time_attributes=[];
+  enemies="";
+  univer="";
+  possible_rooms="";
+  documenta="";
+  constructor(json_parse,documenta){
     this.time_attributes=[];//the attributes for the timeline
     this.enemies=[];//enemy list
     this.univer=json_parse;
     this.possible_rooms;
+    this.documemta=documenta;
     //let document;
   }
   search(roplayer,strinstruction){
@@ -169,10 +171,10 @@ class world{//world has the ability to edit the output and is like GM
   }
 }
 
-function maingame(document){
+function maingame(documenta){
   alert("loaded");
   //this.possible_rooms=this.univer[player[6]].dependencies[attributify(time_attributes)];
-  let gamemaker=new world(await (await fetch(("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json"))).json());
+  let gamemaker=new world(await (await fetch(("https://sulca2099.github.io/timetravelerscyoa/assets/game/main.json"))).json(),documenta);
   alert(gamemaker.univer);
   let you=new the_player();
   let command="";
